@@ -1,1 +1,24 @@
-<p>login works!</p>
+<div class="container">
+  <legend>Sign In</legend>
+  <div class="mb-3">
+    <label for="txtUserName" class="form-label">username</label>
+    <input
+      id="txtUserName"
+      type="text"
+      class="form-control"
+      aria-describedby="emailHelp"
+      [(ngModel)]="loginForm.username"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="txtPassword" class="form-label">password</label>
+    <input
+      id="txtPassword"
+      type="password"
+      class="form-control"
+      aria-describedby="passwordHelp"
+      [(ngModel)]="loginForm.password"
+    />
+  </div>
+  <button (click)="userLogin()" type="button" class="btn btn-primary">Sign In</button>
+</div>
